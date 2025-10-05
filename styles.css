@@ -91,6 +91,52 @@ header nav ul li:hover{
    background-color: rgb(128,128,128);
 }
 
+
+
+
+footer{
+   background-color: rgb(29, 27, 27);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   gap: 1rem;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+footer section{
+   display: flex;
+   gap: .5rem;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+footer section .links{
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
+footer section .links div{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer section .links div:hover{
+   background-color: rgb(128,128,128);
+
+}
+
+footer section .links a{
+   color: white;
+}
+
 @media screen and (min-width: 768px) {
    header{
       padding: 1rem 2.5rem;
@@ -126,5 +172,15 @@ header nav ul li:hover{
 
    header nav ul li{
       width: auto;
+   }
+
+
+
+   footer p{
+      font-size: 1.2rem;
+   }
+
+   footer section h2{
+      font-size: 1.7rem;
    }
 }
