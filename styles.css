@@ -1,0 +1,185 @@
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   width: 100vw;
+   min-height: 100vh;
+   color: white;
+   overflow: hidden;
+}
+
+header{
+   width: 100%;
+   padding: 1rem;
+   display:flex;
+   justify-content: space-between;
+   align-items: center;
+   border-bottom: 1px solid white;
+}
+
+header h1{
+   font-size: 1.5rem;
+   white-space: nowrap;
+}
+
+header .menu{
+   display: block;
+   width: 30px;
+   height: 30px;
+}
+
+header .menu img{
+   width: 100%;
+   height: 100%;
+}
+
+header nav{
+   position: fixed;
+   top: 0;
+   left: 100%;
+   height: 100%;
+   width: 60%;
+   background-color: rgb(29, 27, 27);
+   padding: 1rem;
+}
+
+header nav.show{
+   transform: translateX(-100%);
+}
+
+header nav .close_icon{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+header nav .close_icon:hover{
+   background-color: rgb(128,128,128);
+}
+
+header nav .close_icon img{
+   width: 20px;
+   height: 20px;
+}
+
+header nav ul{
+   display: flex;
+   flex-direction: column;
+   gap: .5rem;
+   list-style: none;
+   align-items: flex-start;
+   justify-content: flex-start;
+}
+
+header nav ul li{
+   width: 100%;
+   padding: .5rem 1rem;
+   border-radius: 5px;
+   cursor: pointer;
+   font-size: 1.5rem;
+}
+
+header nav ul li:hover{
+   background-color: rgb(128,128,128);
+}
+
+
+
+
+footer{
+   background-color: rgb(29, 27, 27);
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   padding: 1rem;
+   gap: 1rem;
+   position: absolute;
+   bottom: 0;
+   left: 0;
+}
+
+footer section{
+   display: flex;
+   gap: .5rem;
+   flex-direction: column;
+   align-items: flex-start;
+}
+
+footer section .links{
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+}
+
+footer section .links div{
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+footer section .links div:hover{
+   background-color: rgb(128,128,128);
+
+}
+
+footer section .links a{
+   color: white;
+}
+
+@media screen and (min-width: 768px) {
+   header{
+      padding: 1rem 2.5rem;
+   }
+
+   header h1{
+      font-size: 2rem;
+      white-space: normal;
+   }
+
+   header .menu{
+      display: none;
+   }
+
+   header nav{
+      position: static;
+      background: none;
+      width: auto;
+      height: auto;
+      padding: 0;
+   }
+
+   header nav .close_icon{
+      display: none;
+   }
+
+   header nav ul{
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+   }
+
+   header nav ul li{
+      width: auto;
+   }
+
+
+
+   footer p{
+      font-size: 1.2rem;
+   }
+
+   footer section h2{
+      font-size: 1.7rem;
+   }
+}
